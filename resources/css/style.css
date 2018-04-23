@@ -2,11 +2,22 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0 auto;
+  background-color: white;
+  line-height: 1.4rem;
   color: black;
 }
 
-.flex {
+a {
+  text-decoration: none;
+}
+
+.flex-content {
   display: flex;
 }
 
@@ -17,7 +28,9 @@ h1 {
 
 h2 {
   font-family: "Merriweather", serif;
+  text-align: center;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 h3 {
@@ -34,9 +47,49 @@ h3 {
 
 /* Header Navigation */
 
+header {
+  height: 2rem;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+}
+
 nav {
   justify-content: space-between;
   align-items: center;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.name {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.logo img {
+  margin: 0 0.125rem 0 0;
+}
+
+.menu ul {
+  font-size: 0.95rem;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding-left: 1rem;
 }
 
 nav li {
