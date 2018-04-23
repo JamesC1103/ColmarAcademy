@@ -323,6 +323,29 @@ header li:last-child {
   padding-bottom: .5rem;
 }
 
+@media only screen and (max-width: 770px) {
+  #learning-section {
+    padding: 2rem 1rem;
+    background-color: inherit;
+  }
+
+  .courses-row {
+    flex-direction: column;
+  }
+
+  .course {
+    margin: .25rem 0;
+  }
+
+  .course .text-content {
+    background-color: rgb(216, 216, 216);
+  }
+
+  .course .media-container, .course p {
+    display: none;
+  }
+}
+
 /* Exhibit Section */
 
 #exhibit-section {
@@ -384,4 +407,10 @@ footer a {
 
 footer a:last-child {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  footer a {
+    display: none;
+  }
 }
