@@ -18,7 +18,6 @@ h1 {
 
 h2 {
   font-family: "Merriweather", serif;
-  text-align: center;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -26,7 +25,7 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .quote {
@@ -54,6 +53,7 @@ h3 {
 .flex-content .main-content {
   width: 60%;
   padding: 2rem 1.5rem 2rem 0;
+  border-right: 1px solid rgb(245, 245, 245);
 }
 
 .flex-content .supporting-content {
@@ -61,6 +61,36 @@ h3 {
   flex-direction: column;
   width: 40%;
   padding: 2rem 0;
+}
+
+.content-image-box {
+  display: flex;
+  padding: 1rem 0 1rem 1rem;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.content-image-box:first-child {
+  padding-top: 0;
+}
+
+.content-image-box .media-container {
+  width: 35%;
+}
+
+.content-image-box .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  padding: 0 0.75rem 0 1rem;
+}
+
+.content-image-box h3 {
+  padding-bottom: .5rem;
+}
+
+.content-image-box p {
+  padding-bottom: .5rem;
 }
 
 /* Header */
@@ -115,6 +145,10 @@ header li:last-child {
   top: 4rem;
 }
 
+#banner .main-content {
+  border-right: none;
+}
+
 #banner .supporting-content {
   justify-content: center;
 }
@@ -140,8 +174,30 @@ header li:last-child {
 
 /* Practice Section */
 
+#practice-section {
+  position: relative;
+  top: 4rem;
+}
+
+#practice-section h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#practice-section p {
+  margin-bottom: 2rem;
+}
+
+#practice-section .supporting-content {
+  justify-content: space-between;
+}
+
 /* Learning Section */
 
+
 /* Exhibit Section */
+
+
 
 /* Footer */
