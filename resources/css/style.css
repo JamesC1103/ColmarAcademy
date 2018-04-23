@@ -225,6 +225,23 @@ header li:last-child {
   width: 75%;
 }
 
+@media only screen and (max-width: 770px) {
+  #banner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #banner .main-content {
+    width: auto;
+    padding: 0;
+  }
+
+  #banner .supporting-content {
+    width: auto;
+    padding: 2rem 1rem;
+  }
+}
+
 /* Practice Section */
 
 #practice-section {
@@ -326,6 +343,26 @@ header li:last-child {
 
 #exhibit-section .main-content {
   padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 895px) {
+  #exhibit-section {
+    padding-bottom: 1.5rem;
+  }
+
+  #exhibit-section .flex-content {
+    padding: 0;
+  }
+
+  #exhibit-section .main-content {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  #exhibit-section .main-content h3, #exhibit-section .main-content p, #exhibit-section .supporting-content {
+    display: none;
+  }
 }
 
 /* Footer */
