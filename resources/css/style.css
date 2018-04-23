@@ -34,11 +34,6 @@ h3 {
   font-style: italic;
 }
 
-.flex-content {
-  display: flex;
-  padding: 0 1.5rem;
-}
-
 .media-container {
   overflow: hidden;
 }
@@ -50,6 +45,11 @@ h3 {
 }
 
 /* Universal Styles - Flex-Containers */
+
+.flex-content {
+  display: flex;
+  padding: 0 1.5rem;
+}
 
 .flex-content .main-content {
   width: 60%;
@@ -63,6 +63,8 @@ h3 {
   width: 40%;
   padding: 2rem 0;
 }
+
+/* Image Content Containers */
 
 .content-image-box {
   display: flex;
@@ -383,7 +385,9 @@ header li:last-child {
     margin-right: 0;
   }
 
-  #exhibit-section .main-content h3, #exhibit-section .main-content p, #exhibit-section .supporting-content {
+  #exhibit-section .main-content h3,
+  #exhibit-section .main-content p,
+  #exhibit-section .supporting-content {
     display: none;
   }
 }
