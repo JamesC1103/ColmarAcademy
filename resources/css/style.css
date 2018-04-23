@@ -10,15 +10,6 @@ a {
   text-decoration: none;
 }
 
-strong {
-  font-weight: bold;
-}
-
-.flex-content {
-  display: flex;
-  padding: 0 1.5rem;
-}
-
 h1 {
   font-family: "Merriweather", serif;
   font-weight: bold;
@@ -41,6 +32,11 @@ h3 {
   font-style: italic;
 }
 
+.flex-content {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
 /* Header Logo */
 
 /* Header Navigation */
@@ -59,6 +55,10 @@ header .desktop {
   margin: 0 1.5rem;
 }
 
+header .logo img {
+  margin-right: .5rem;
+}
+
 header .logo {
   display: flex;
   align-items: center;
@@ -73,14 +73,10 @@ header .logo {
   opacity: 0.5;
 }
 
-header .logo img {
-  margin-right: .5rem;
-}
-
 header li {
   display: inline;
   padding-right: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 header li:last-child {
