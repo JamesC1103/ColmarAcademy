@@ -70,6 +70,10 @@ h3 {
   border-bottom: 1px solid rgb(245, 245, 245);
 }
 
+.content-image-box .mobile {
+  display: none;
+}
+
 .content-image-box:first-child {
   padding-top: 0;
 }
@@ -92,6 +96,25 @@ h3 {
 
 .content-image-box p {
   padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 895px) {
+  .content-image-box .desktop {
+    display: none;
+  }
+
+  .content-image-box .mobile {
+    display: block;
+  }
+
+  .content-image-box {
+    padding-left: 0;
+    border-bottom: none;
+  }
+
+  .content-image-box .media-container {
+    width: 100%;
+  }
 }
 
 /* Header */
@@ -221,6 +244,29 @@ header li:last-child {
 
 #practice-section .supporting-content {
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 895px) {
+  #practice-section.flex-content {
+    padding: 0 1rem;
+  }
+
+  #practice-section .main-content {
+    display: none;
+  }
+
+  #practice-section .supporting-content {
+    width: 100%;
+  }
+
+  #practice-section .supporting-content .content-image-box {
+    flex-direction: column;
+  }
+
+  #practice-section .text-content {
+    max-width: 14rem;
+    padding: 1rem;
+  }
 }
 
 /* Learning Section */
