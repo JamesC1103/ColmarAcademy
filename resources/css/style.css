@@ -110,6 +110,10 @@ header .desktop {
   margin: 0 1.5rem;
 }
 
+header .mobile {
+  display: none;
+}
+
 header .logo img {
   margin-right: .5rem;
 }
@@ -136,6 +140,31 @@ header li {
 
 header li:last-child {
   padding-right: 0;
+}
+
+@media only screen and (max-width: 550px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  nav {
+    display: none;
+  }
 }
 
 /* Main Banner */
