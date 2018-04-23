@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: black;
 }
@@ -10,10 +10,38 @@ html {
   display: flex;
 }
 
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.quote {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
 /* Header Logo */
 
 /* Header Navigation */
 
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+}
 
 /* Main Banner */
 
