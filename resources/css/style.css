@@ -12,7 +12,8 @@ a {
 
 h1 {
   font-family: "Merriweather", serif;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -25,6 +26,7 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .quote {
@@ -37,9 +39,31 @@ h3 {
   padding: 0 1.5rem;
 }
 
-/* Header Logo */
+.media-container {
+  overflow: hidden;
+}
 
-/* Header Navigation */
+.media-container img,
+.media-container video {
+  display: block;
+  width: 100%;
+}
+
+/* Universal Styles - Flex-Containers */
+
+.flex-content .main-content {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 0;
+}
+
+.flex-content .supporting-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem 0;
+}
+
+/* Header */
 
 header {
   padding: 1rem 0;
@@ -84,6 +108,35 @@ header li:last-child {
 }
 
 /* Main Banner */
+
+#banner {
+  background-color: rgb(219, 219, 219);
+  position: relative;
+  top: 4rem;
+}
+
+#banner .supporting-content {
+  justify-content: center;
+}
+
+#banner h1 {
+  padding-bottom: 2rem;
+}
+
+#banner p {
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+#banner a {
+  padding: .5rem 0;
+  background-color: rgb(155, 155, 155);
+  text-align: center;
+  color: white;
+  display: block;
+  width: 75%;
+}
 
 /* Practice Section */
 
