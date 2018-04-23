@@ -448,6 +448,10 @@ footer a {
   color: rgb(51, 176, 150);
 }
 
+footer a:hover {
+  font-weight: bold;
+}
+
 footer a:last-child {
   margin-right: 0;
 }
