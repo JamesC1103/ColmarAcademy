@@ -76,6 +76,10 @@ h3 {
   color: rgb(51, 176, 150);
 }
 
+.content-image-box a:hover {
+  font-weight: bold;
+}
+
 .content-image-box .mobile {
   display: none;
 }
@@ -167,6 +171,10 @@ header li {
   padding-right: 1rem;
   font-size: 0.9rem;
   color: rgb(51, 176, 150);
+}
+
+header li:hover {
+  font-weight: bold;
 }
 
 header li:last-child {
